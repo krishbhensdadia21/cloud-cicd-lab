@@ -183,7 +183,7 @@ HTML_TEMPLATE = """
 @app.route('/')
 def home():
     hostname = socket.gethostname()
-    version = os.environ.get("APP_VERSION", "1.0")
+    version = os.environ.get("APP_VERSION", "2.0")
     return render_template_string(HTML_TEMPLATE, hostname=hostname, version=version)
 
 if __name__ == '__main__':
