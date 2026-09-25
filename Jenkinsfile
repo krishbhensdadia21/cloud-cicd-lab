@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/alex-devops/cloud-cicd-lab.git'
+                git 'https://github.com/krishbhensdadia21/cloud-cicd-lab.git'
             }
         }
         stage('Build') {
