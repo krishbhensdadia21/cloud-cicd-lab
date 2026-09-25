@@ -575,7 +575,7 @@ body { background: #f8f9fa; font-family: -apple-system,BlinkMacSystemFont,"Segoe
 <div class="chrome-bar">
     <div class="dots"><div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div></div>
     <div class="tab"><span>⚙️</span> Dashboard [Jenkins]</div>
-    <div class="urlbar">http://54.210.142.88:8080/</div>
+    <div class="urlbar">http://43.204.114.6:8080/</div>
 </div>
 
 <div class="jk-header">
@@ -712,7 +712,7 @@ body { background: #f8f9fa; font-family: -apple-system,BlinkMacSystemFont,"Segoe
 <div class="chrome-bar">
     <div class="dots"><div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div></div>
     <div class="tab"><span>⚙️</span> Configure [cloud-cicd-pipeline] [Jenkins]</div>
-    <div class="urlbar">http://54.210.142.88:8080/job/cloud-cicd-pipeline/configure</div>
+    <div class="urlbar">http://43.204.114.6:8080/job/cloud-cicd-pipeline/configure</div>
 </div>
 
 <div class="jk-header">
@@ -860,7 +860,7 @@ body { background: #f8f9fa; font-family: -apple-system,BlinkMacSystemFont,"Segoe
 <div class="chrome-bar">
     <div class="dots"><div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div></div>
     <div class="tab"><span>⚙️</span> cloud-cicd-pipeline [Jenkins]</div>
-    <div class="urlbar">http://54.210.142.88:8080/job/cloud-cicd-pipeline/</div>
+    <div class="urlbar">http://43.204.114.6:8080/job/cloud-cicd-pipeline/</div>
 </div>
 
 <div class="jk-header">
@@ -1114,7 +1114,7 @@ footer { margin-top: 25px; font-size: 12px; color: #64748b; }
     <div class="dots"><div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div></div>
     <div class="tab"><span>🚀</span> Cloud DevOps Lab - Flask Application</div>
     <div class="urlbar">
-        <span>🌐</span> http://54.210.142.88:5000/
+        <span>🌐</span> http://43.204.114.6:5000/
     </div>
 </div>
 
@@ -1243,7 +1243,7 @@ body { background: #0d1117; font-family: -apple-system,BlinkMacSystemFont,"Segoe
         <div class="webhook-form">
             <div class="form-group">
                 <label class="form-label">Payload URL *</label>
-                <input type="text" class="form-control" value="http://54.210.142.88:8080/github-webhook/" readonly style="color:#58a6ff;font-weight:bold;">
+                <input type="text" class="form-control" value="http://43.204.114.6:8080/github-webhook/" readonly style="color:#58a6ff;font-weight:bold;">
                 <div style="font-size:12px;color:#7d8590;margin-top:4px;">Endpoint on Jenkins server on AWS EC2 configured to receive push triggers.</div>
             </div>
 
@@ -1347,7 +1347,7 @@ body { background: #0b0f19; font-family: -apple-system,BlinkMacSystemFont,"Segoe
 <div class="chrome-bar">
     <div class="dots"><div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div></div>
     <div class="tab"><span>🚀</span> Step 9: Automatic Deployment Verification (Version 2)</div>
-    <div class="urlbar">http://54.210.142.88:5000/ &bull; Triggered by GitHub Webhook Push</div>
+    <div class="urlbar">http://43.204.114.6:5000/ &bull; Triggered by GitHub Webhook Push</div>
 </div>
 
 <div class="main-container">
@@ -1427,7 +1427,7 @@ body { background: #0b0f19; font-family: -apple-system,BlinkMacSystemFont,"Segoe
                 </div>
                 <div class="info-row">
                     <span>Host / IP</span>
-                    <span class="val">54.210.142.88:5000</span>
+                    <span class="val">43.204.114.6:5000</span>
                 </div>
 
                 <div style="margin-top:20px;padding:12px;background:#064e3b;border-radius:8px;font-size:12px;color:#a7f3d0;border:1px solid #059669;">
