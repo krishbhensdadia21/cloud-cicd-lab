@@ -6,16 +6,16 @@ SCREENSHOTS_DIR = os.path.join(PROJECT_DIR, "screenshots")
 HTML_REPORT_PATH = os.path.join(PROJECT_DIR, "lab_report.html")
 
 shots = [
-    ("01_github_repository.png", "Screenshot 1: GitHub Repository", "GitHub repository cloud-cicd-lab with app.py, Dockerfile, Jenkinsfile, requirements.txt, and README.md."),
-    ("02_flask_application.png", "Screenshot 2: Flask Application", "Source code of app.py displayed inside VS Code editor with local Flask development server execution on port 5000."),
-    ("03_dockerfile.png", "Screenshot 3: Dockerfile", "Dockerfile containing container configuration (FROM python:3.11, WORKDIR, COPY, RUN pip install, EXPOSE 5000, CMD) and requirements.txt in terminal."),
-    ("04_jenkins_dashboard.png", "Screenshot 4: Jenkins Dashboard", "Jenkins web dashboard at http://54.210.142.88:8080 showing project cloud-cicd-pipeline with Sunny weather status and Blue ball (Success)."),
-    ("05_jenkins_pipeline.png", "Screenshot 5: Jenkins Pipeline Configuration", "Jenkins pipeline configuration interface with GitHub hook trigger checked and declarative Groovy pipeline stages (Clone, Build, Deploy)."),
-    ("06_successful_pipeline_build.png", "Screenshot 6: Successful Pipeline Build", "Jenkins Stage View displaying Build #1 with all three stages (Clone 8s, Build 41s, Deploy 5s) marked green SUCCESS, along with console output snippet."),
-    ("07_running_docker_container.png", "Screenshot 7: Running Docker Container on AWS EC2", "AWS EC2 Ubuntu terminal executing 'docker ps' verifying container cloud-app is active and listening on port 0.0.0.0:5000->5000/tcp."),
-    ("08_application_output.png", "Screenshot 8: Application Output in Browser", "Web browser accessing live Flask application at http://54.210.142.88:5000/ displaying Version 1.0 status."),
-    ("09_github_webhook.png", "Screenshot 9: GitHub Webhook Configuration", "GitHub repository Webhook settings showing Payload URL http://54.210.142.88:8080/github-webhook/, active status, and Recent Deliveries 200 OK delivery."),
-    ("10_automatic_deployment.png", "Screenshot 10: Automatic Deployment Verification (Version 2)", "Automated deployment verification showing git push triggering Jenkins Build #2 via webhook, and live browser updating to Version 2.0 without manual intervention.")
+    ("1. GitHub Repository.png", "1. GitHub Repository", "Real GitHub repository krishbhensdadia21/cloud-cicd-lab populated with app.py, Dockerfile, Jenkinsfile, requirements.txt, and README.md."),
+    ("2. Flask Application.png", "2. Flask Application", "Source code of app.py displayed in GitHub repository with Flask routes and HTML template for Version 1.0 and 2.0."),
+    ("3. Dockerfile.png", "3. Dockerfile", "Dockerfile on GitHub containing container configuration (FROM python:3.11, WORKDIR /app, COPY, RUN pip install, EXPOSE 5000, CMD)."),
+    ("4. Jenkins Dashboard.png", "4. Jenkins Dashboard", "Real Jenkins web dashboard at http://43.204.114.6:8080 showing project cloud-cicd-pipeline with Sunny weather status and Green checkmark (Success)."),
+    ("5. Jenkins Pipeline.png", "5. Jenkins Pipeline", "Jenkins Pipeline configuration interface with Execute shell build steps (Git Clone, Docker Build, Container Run) and trigger configuration."),
+    ("6. Successful Pipeline Build.png", "6. Successful Pipeline Build", "Jenkins Build #1 Console Output displaying all stages executing successfully on EC2 and ending with 'Finished: SUCCESS'."),
+    ("7. Running Docker Container.png", "7. Running Docker Container", "AWS EC2 terminal session (ec2-user@ip-172-31-15-229) executing 'docker ps' verifying container cloud-app (feba7139a0b7) is active on port 0.0.0.0:5000->5000/tcp."),
+    ("8. Application Output.png", "8. Application Output", "Web browser accessing live Flask application at http://43.204.114.6:5000/ displaying Version 1.0 automated deployment status."),
+    ("9. GitHub Webhook.png", "9. GitHub Webhook", "GitHub repository Webhook settings showing Payload URL http://43.204.114.6:8080/github-webhook/, active status, and Recent Deliveries."),
+    ("10. Automatic Deployment.png", "10. Automatic Deployment", "Automated deployment verification showing git push triggering Jenkins Build #2, and live browser updating to Version 2.0 without manual intervention.")
 ]
 
 shot_sections = ""

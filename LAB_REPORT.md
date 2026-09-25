@@ -250,63 +250,63 @@ Click **Build Now** in Jenkins. Monitor the Pipeline Stage View:
 
 ## 7. Screenshots & Observations
 
-### Screenshot 1: GitHub Repository
-![GitHub Repository](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/01_github_repository.png)
-*Observation: GitHub repository `cloud-cicd-lab` populated with `app.py`, `Dockerfile`, `Jenkinsfile`, `requirements.txt`, and `README.md`.*
+### 1. GitHub Repository
+![GitHub Repository](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/1.%20GitHub%20Repository.png)
+*Observation: Real GitHub repository `krishbhensdadia21/cloud-cicd-lab` populated with `app.py`, `Dockerfile`, `Jenkinsfile`, `requirements.txt`, and `README.md`.*
 
 ---
 
-### Screenshot 2: Flask Application
-![Flask Application](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/02_flask_application.png)
-*Observation: Source code of `app.py` in VS Code with local testing verified on port 5000.*
+### 2. Flask Application
+![Flask Application](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/2.%20Flask%20Application.png)
+*Observation: Source code of `app.py` displayed in the GitHub repository showing Flask routes, templates, and server initialization.*
 
 ---
 
-### Screenshot 3: Dockerfile
-![Dockerfile](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/03_dockerfile.png)
-*Observation: Multi-instruction Dockerfile configuring Python 3.11, dependency installation, and container entrypoint.*
+### 3. Dockerfile
+![Dockerfile](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/3.%20Dockerfile.png)
+*Observation: Dockerfile on GitHub configuring Python 3.11 base image, dependency installation via pip, container port 5000 exposure, and entrypoint command.*
 
 ---
 
-### Screenshot 4: Jenkins Dashboard
-![Jenkins Dashboard](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/04_jenkins_dashboard.png)
-*Observation: Jenkins management console with `cloud-cicd-pipeline` job created, showing blue status ball (Success) and sunny weather icon.*
+### 4. Jenkins Dashboard
+![Jenkins Dashboard](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/4.%20Jenkins%20Dashboard.png)
+*Observation: Jenkins management console at `http://43.204.114.6:8080/` showing `cloud-cicd-pipeline` job created, showing green checkmark (Success) and sunny weather icon.*
 
 ---
 
-### Screenshot 5: Jenkins Pipeline Configuration
-![Jenkins Pipeline](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/05_jenkins_pipeline.png)
-*Observation: Pipeline configuration with `GitHub hook trigger for GITScm polling` checked and declarative Groovy pipeline stages (Clone, Build, Deploy).*
+### 5. Jenkins Pipeline
+![Jenkins Pipeline](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/5.%20Jenkins%20Pipeline.png)
+*Observation: Jenkins Pipeline configuration interface showing Execute shell build steps with Git clone, Docker build, and Docker deployment commands.*
 
 ---
 
-### Screenshot 6: Successful Pipeline Build
-![Successful Pipeline Build](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/06_successful_pipeline_build.png)
-*Observation: Stage View showing all 3 stages (Clone, Build, Deploy) completed with green SUCCESS badges, and console output displaying `Finished: SUCCESS`.*
+### 6. Successful Pipeline Build
+![Successful Pipeline Build](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/6.%20Successful%20Pipeline%20Build.png)
+*Observation: Real Jenkins console output of Build #1 at `http://43.204.114.6:8080/job/cloud-cicd-pipeline/1/console` showing the execution of all stages, Docker container deployment, and `Finished: SUCCESS`.*
 
 ---
 
-### Screenshot 7: Running Docker Container
-![Running Docker Container](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/07_running_docker_container.png)
-*Observation: Ubuntu EC2 bash terminal executing `docker ps`, showing container `cloud-app` active and mapped to port `0.0.0.0:5000->5000/tcp`.*
+### 7. Running Docker Container
+![Running Docker Container](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/7.%20Running%20Docker%20Container.png)
+*Observation: Live AWS EC2 terminal session on `ec2-user@ip-172-31-15-229` running `docker ps` showing active container `feba7139a0b7` running image `cloud-app:latest` mapped to `0.0.0.0:5000->5000/tcp`.*
 
 ---
 
-### Screenshot 8: Application Output
-![Application Output](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/08_application_output.png)
-*Observation: Web browser accessing `http://<EC2-IP>:5000/`, displaying the running Flask web application (Version 1.0).*
+### 8. Application Output
+![Application Output](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/8.%20Application%20Output.png)
+*Observation: Web browser accessing `http://43.204.114.6:5000/`, displaying the live Flask web application (Version 1.0).*
 
 ---
 
-### Screenshot 9: GitHub Webhook Configuration
-![GitHub Webhook](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/09_github_webhook.png)
-*Observation: GitHub repository Webhook settings displaying Payload URL `http://<EC2-IP>:8080/github-webhook/`, active status, and successful HTTP 200 OK delivery.*
+### 9. GitHub Webhook
+![GitHub Webhook](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/9.%20GitHub%20Webhook.png)
+*Observation: GitHub repository Webhook settings displaying Payload URL `http://43.204.114.6:8080/github-webhook/`, active status, and Recent Deliveries.*
 
 ---
 
-### Screenshot 10: Automatic Deployment Verification
-![Automatic Deployment](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/10_automatic_deployment.png)
-*Observation: End-to-end verification showing `git push` triggering Jenkins Build #2 automatically via webhook, and browser reflecting updated Version 2.0 without manual intervention.*
+### 10. Automatic Deployment
+![Automatic Deployment](file:///C:/Users/User/.gemini/antigravity-ide/brain/deef6c14-d6d0-49f8-aaf2-6b6dada327e2/10.%20Automatic%20Deployment.png)
+*Observation: Real Jenkins build page showing automated Build #2 completed successfully following git push, deploying Version 2.0 to `http://43.204.114.6:5000/`.*
 
 ---
 
